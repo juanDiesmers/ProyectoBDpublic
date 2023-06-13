@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<Pane style="-fx-background-color: #f4f4f4; -fx-padding: 20px;" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml" fx:controller="edu.bs.proyectobd.controladodor.PayPurchaseController">
+   <VBox alignment="CENTER" prefHeight="346.0" prefWidth="471.0" spacing="10">
+      <Label style="-fx-font-size: 24px; -fx-font-family: 'Arial'; -fx-text-fill: #333333;" text="Carrito" />
+
+      <FlowPane alignment="CENTER" hgap="10" vgap="10">
+         <ScrollPane fx:id="scrollPane" fitToHeight="true" fitToWidth="true">
+            <VBox fx:id="carritoVBox" alignment="CENTER" spacing="10" style="-fx-border-color: #000000; -fx-border-width: 1px; -fx-padding: 10px;" />
+         </ScrollPane>
+      </FlowPane>
+      <HBox alignment="CENTER" spacing="10">
+         <Button fx:id="pago" onAction="#onPagarClick" style="-fx-font-size: 16px; -fx-font-family: 'Arial'; -fx-text-fill: #ffffff; -fx-background-color: #333333; -fx-padding: 10px 20px; -fx-cursor: hand;" text="Pagar" />
+         <Button fx:id="eliminarCarrito" layoutX="212.0" layoutY="10.0" onAction="#onElinarClick" style="-fx-font-size: 16px; -fx-font-family: 'Arial'; -fx-text-fill: #ffffff; -fx-background-color: #333333; -fx-padding: 10px 20px; -fx-cursor: hand;" text="EliminarCarrito" />
+      </HBox>
+      <Label fx:id="totalLabel"  style="-fx-font-weight: bold; -fx-text-fill: #000000;" text="Total:" />
+      <Button fx:id="back" onAction="#onRegresarClick" style="-fx-font-size: 18px; -fx-font-family: 'Arial'; -fx-text-fill: #ffffff; -fx-background-color: #773d3d; -fx-padding: 10px 20px; -fx-cursor: hand;" text="Regresar" />
+   </VBox>
+</Pane>

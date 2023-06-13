@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox alignment="CENTER" style="-fx-background-color: #f4f4f4;" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="edu.bs.proyectobd.controladodor.LoginController" minWidth="400" maxWidth="400" minHeight="300" maxHeight="300">
+    <children>
+        <Label style="-fx-font-size: 24px; -fx-font-family: 'Arial'; -fx-text-fill: #333333;" text="Inicio de Sesión" />
+
+        <GridPane alignment="CENTER" hgap="10" vgap="10" style="-fx-border-color: #000000; -fx-border-width: 1px; -fx-padding: 10px;">
+            <Label style="-fx-text-fill: #000000;" text="Nombre de usuario:" GridPane.columnIndex="0" GridPane.rowIndex="0" />
+            <TextField fx:id="userName" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="0" />
+
+            <Label style="-fx-text-fill: #000000;" text="Contraseña:" GridPane.columnIndex="0" GridPane.rowIndex="1" />
+            <PasswordField fx:id="passwordField" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+
+            <Button fx:id="startSesion" mnemonicParsing="false" onAction="#onInicioSesionClik" style="-fx-font-size: 16px; -fx-font-family: 'Arial'; -fx-text-fill: #ffffff; -fx-background-color: #333333; -fx-padding: 10px 20px; -fx-cursor: hand;" text="Iniciar Sesión" GridPane.columnIndex="0" GridPane.columnSpan="2" GridPane.halignment="CENTER" GridPane.rowIndex="2" />
+
+            <columnConstraints>
+                <ColumnConstraints hgrow="ALWAYS" minWidth="100" />
+                <ColumnConstraints hgrow="NEVER" />
+            </columnConstraints>
+            <rowConstraints>
+                <RowConstraints vgrow="ALWAYS" minHeight="50" />
+                <RowConstraints vgrow="SOMETIMES" />
+            </rowConstraints>
+        </GridPane>
+    </children>
+</VBox>
+
+
